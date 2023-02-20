@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!--used for EVERY HTML file-->
+
+<html lang="en"> <!--Tell the webpage to display in english, also used in every file-->
+    <head> <!--Head element, used for the TOP on every HTML file and will contain all needed for heading-->
+        <meta charset="UTF-8"> <!--used for allowing a specific character set-->
+        <title>My First Website</title> <!--Tells the webpage what to display as text on the tab for the page, and used when people google-->
+    </head> <!-- Heading element end -->
+
+    <body> <!--Start of body element, the "meat and potatoes" of the page, where you can add images, text, etc-->
+        <h1>My First Website!</h1> <!--Heading 1, largest text for the TOP of the page-->
+        
+        <h2>Paragraph 1</h2> <!-- Heading 2, slightly smaller size than 1-->
+
+        <p><strong>Absolute Path Image Below</strong></p> 
+        <img src="https://www.theodinproject.com/mstile-310x310.png"> <!--Used for images found on websites, ABSOLUTE path-->
+
+        <p>This is for my <strong>first</strong> paragraph. <!-- Paragraph element with BOLD/strong text element-->
+        I am testing to see what happens when I use the 
+        <strong>strong</strong> element in a paragraph.</p>
+
+        <p>Below, I will create a <strong>ORDERED</strong> list that will display ordered numbers before each item.
+        </p>
+        <ol> <!-- For ORDERED lists, will add an ordered number before each element displayed-->
+            <li>Item 1</li> <!--Will show as 1. Item 1-->
+            <li>Item 2</li> <!--Will show as 2. Item 2-->
+        </ol>
+
+        <h2>Paragraph 2</h2> <!--Heading 2 size again-->
+
+        <p><strong>Relative Path Image Below</strong></p>
+        <img src="images/dog.jpg" alt="What a cute dog!"> <!--used for images in directory, RELATIVE path, this also adds text with alt-->
+        <p> Paragraph 2 is used for <em>testing out the em element</em></p> <!--Paragraph 2 using emphasis element for italitcs-->
+        <p>Below I will create an <strong>UNORDERED</strong> list which will not have
+            numbers before the item.
+        </p>
+        <ul> <!--UNORDERED list element for when you dont care about the order of the items-->
+            <li>Item 1</li> <!--List item 1, each item MUST have this element-->
+            <li> Item 2 </li> <!--Item 2, testing out how spacing looks-->
+        </ul>
+
+        <p> <!--Without adding this as a new paragraph, they display as 1 line-->
+            <a>Click me! But.. you cant!</a> <!--Anchor references wont show as link/work unless you add the below-->
+        </p>
+        <p>
+            <a href="https://www.google.com"> Now try to click me! Im a ABSOLUTE link!</a> <!--Adding href= allows you to add a LINK, but end it with > And this is a ABSOLUTE LINK, as it goes to another website page-->
+        </p>
+
+        <p>
+            <a href="pages/about.html">Click for About Page, Im a RELATIVE link!</a> <!--Used for RELATIVE links, pages within your own site-->
+            <p>
+            <a href="./about.html">Another way to do that is adding ./!</a> <!--- Adding ./ before about helps it find the correct path without issues -->
+            </p>
+        </p>
+    </body> <!-- closing body element-->
+</html> <!-- closing file element-->
